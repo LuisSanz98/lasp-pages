@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha de producto · LASP NEO·GEO Archive</title>
+<meta name="description" content="Ficha de producto del stock original de NEO·GEO conservado por LASP, antiguo importador exclusivo en España.">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="img/lasp-logo.png" alt="LASP" class="logo-img"><span class="logo-sub">NEO·GEO ARCHIVE</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#historia">Nuestra historia</a>
+      <a href="index.html#catalogo">Catálogo</a>
+      <a href="index.html#autenticidad">Autenticidad</a>
+      <a href="index.html#contacto" class="nav-cta">Reservar pieza</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="ficha">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href="index.html#catalogo">Catálogo</a> <span>/</span> <span id="breadcrumbName">Ficha de producto</span>
+      </p>
+
+      <div id="fichaContent" class="ficha-grid">
+        <!-- Rellenado por js/producto.js -->
+      </div>
+
+      <div id="fichaNotFound" class="ficha-not-found" hidden>
+        <h2>No hemos encontrado esta pieza</h2>
+        <p>Puede que ya no esté disponible o que el enlace sea incorrecto.</p>
+        <a href="index.html#catalogo" class="btn btn-primary">Volver al catálogo</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo"><img src="img/lasp-logo.png" alt="LASP" class="logo-img"></span>
+      <p>Archivo y venta del último stock original de nuestra etapa como importador de NEO·GEO en España.</p>
+    </div>
+    <div class="footer-legal">
+      <p>LASP no está afiliado, patrocinado ni respaldado actualmente por SNK Corporation. NEO·GEO es marca registrada de sus respectivos titulares. Todo el material ofrecido es stock original adquirido durante nuestra etapa histórica como importador en España.</p>
+      <p>© <span id="year"></span> LASP. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products-data.js"></script>
+<script src="js/producto.js"></script>
+<script src="js/visitas.js"></script>
+</body>
+</html>
